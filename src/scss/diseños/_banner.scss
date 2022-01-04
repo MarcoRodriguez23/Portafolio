@@ -1,0 +1,42 @@
+.banner{
+    height: 20rem;
+    position: relative;
+    @include tablet{
+        height: 92.5vh;
+    }
+    
+    .overlay{
+        position: absolute;
+        background-color: rgba($color: $negro, $alpha: 0.6);
+        height: 100%;
+        width: 100%;
+        .contenido-titulo{
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            height: 100%;
+            h2{
+                display: flex;
+                flex-direction: column;
+                text-align: start;
+                color: $blanco;
+                span{
+                    font-weight: $delgada;
+                    font-size: 2.4rem;
+                }
+            }
+
+        }
+        
+        
+
+    }
+
+    img{
+        background-image: url('../../../build/img/fondo\ 2.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+}

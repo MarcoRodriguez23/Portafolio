@@ -1,0 +1,21 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "Pagina web donde se mostraran los proyectos que he realizado",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-image-resize": "^0.13.1",
+    "gulp-gm": "^0.0.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Portafolio",
+    "desarrollo-web",
+    "proyectos"
+  ],
+  "author": "Marco Rodriguez",
+  "license": "ISC"
+}

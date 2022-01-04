@@ -1,0 +1,18 @@
+.seccion {
+    margin-top: $separacion / 2;
+    margin-bottom: $separacion / 2;
+}
+.contenido-centrado {
+    max-width: 800px;
+}
+
+.boton{
+    @include boton();
+    background-color: $amarillo;
+}
+
+.sombra{
+    -webkit-box-shadow: 2px 12px 26px 8px rgba(0,0,0,0.20);
+    -moz-box-shadow: 2px 12px 26px 8px rgba(0,0,0,0.20);
+    box-shadow: 2px 12px 26px 8px rgba(0,0,0,0.20);
+}
