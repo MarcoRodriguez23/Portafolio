@@ -1,0 +1,43 @@
+.cuadricula{
+    margin: 4rem auto;
+    width: 60%;
+
+    .subcuadricula{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h4{
+            margin: 0;
+            width: 100%;
+            background-color: $azulUno;
+            padding: 4rem;
+            text-align: center;
+            color: $blanco;
+            border-radius: 2rem;
+        }
+        ul{
+            height: 30rem;
+            list-style: none;
+            width: 100%;
+            padding: 2rem;
+            border-radius: 2rem;
+            border: 1px solid $gris;
+            li{
+                &::after{
+                    content: '';
+                    background-color: $gris;
+                    width: 100%;
+                    height: 1px;
+                    display: block;
+                }
+            }
+        }
+    }
+    
+    @include tablet{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 4rem;
+        width: 80%;
+    }
+}

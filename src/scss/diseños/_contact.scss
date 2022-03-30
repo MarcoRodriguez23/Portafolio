@@ -1,0 +1,43 @@
+.contact{
+    margin: 2rem 0 0 0;
+    background-color: $negro;
+    padding: 1rem 0;
+    h4{
+        color: $blanco;
+        font-size: 6rem;
+        margin-top: 0;
+    }
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        height: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        // border: 1px solid white;
+        li{
+            height: 70%;
+            width: auto;
+            margin: 0;
+            
+            a{
+                
+                width: 100%;
+                height: 100%;
+                img{
+                    border-radius: 1rem;
+                    background-color: $blanco;
+                }
+            }
+        }
+    }
+}
+
+.footer{
+    margin: 0;
+    background-color: $negro;
+    color: $blanco;
+    text-align: center;
+}

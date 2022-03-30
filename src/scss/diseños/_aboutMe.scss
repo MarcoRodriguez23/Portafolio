@@ -1,0 +1,70 @@
+.about-me{
+    // border: 1px solid black;
+    margin: 2rem auto;
+    padding: 2rem;
+
+    .about-me-info{
+        // border: 1px solid blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem;
+        h3{
+            font-size: 8rem;
+            text-align: center;
+            line-height: 8rem;
+            &::after{
+                content: '';
+                background-color: $azulDos;
+                width: 60%;
+                height: 3px;
+                display: block;
+                margin: 2rem auto;
+
+            }
+        }
+    }
+    .about-me-picture{
+        // border: 1px solid yellow;
+        display: flex;
+        justify-content: center;
+        img{
+            margin: auto;
+            width: 80%;
+            object-fit: cover;
+        }
+    }
+
+    @include tablet{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        gap: 2rem;
+
+        .about-me-info{
+            padding: 2rem;
+            h3{
+                font-size: 10rem;
+                text-align: right;
+                &::after{
+                    margin: 0;
+                    margin-left: auto;
+                    margin-top: 4rem;
+    
+                }
+            }
+        }
+        .about-me-picture{
+            img{
+                margin: auto;
+                height: 80%;
+                -webkit-box-shadow: -20px -20px 0px 10px $negro;
+                -moz-box-shadow: -20px -20px 0px 10px $negro;
+                box-shadow: -20px -20px 0px 10px $negro;
+            }
+        }
+    }
+}
+
+span{
+    color: $azulDos;
+}
