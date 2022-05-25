@@ -1,4 +1,4 @@
-function iniciarApp(){eventListeners()}function eventListeners(){document.querySelector(".mobile-menu").addEventListener("click",navegacionResponsive)}function navegacionResponsive(){const e=document.querySelector(".navegacion");e.classList.contains("mostrar")?e.classList.remove("mostrar"):e.classList.add("mostrar")}
+function iniciarApp(){eventListeners(),scrollNav()}function eventListeners(){document.querySelector(".mobile-menu").addEventListener("click",navegacionResponsive)}function navegacionResponsive(){const e=document.querySelector(".navegacion");e.classList.contains("mostrar")?e.classList.remove("mostrar"):e.classList.add("mostrar")}function scrollNav(){document.querySelectorAll(".navegacion a").forEach((function(e){e.addEventListener("click",(function(e){e.preventDefault();document.querySelector(e.target.attributes.href.value).scrollIntoView({behavior:"smooth"})}))}))}
 /* @preserve
     _____ __ _     __                _
    / ___// /(_)___/ /___  ____      (_)___

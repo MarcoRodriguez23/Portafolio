@@ -16,13 +16,18 @@
             border-radius: 2rem;
         }
         ul{
-            height: 30rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            // align-items: center;
+            height: 100%;
             list-style: none;
             width: 100%;
             padding: 2rem;
             border-radius: 2rem;
             border: 1px solid $gris;
             li{
+                margin: 0.5rem;
                 &::after{
                     content: '';
                     background-color: $gris;
