@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded',function(){
 function iniciarApp(){
     eventListeners();
     scrollNav()
+    carrousel();
 }
 // funcion para poder utilizar el icono de menu movil y poder ver las opciones del navegador
 // APROBADO
@@ -39,4 +40,28 @@ function scrollNav(){
             });
         });
     });
+}
+
+function carrousel(){
+    const carrouseles = document.querySelectorAll('.owl-carousel');
+
+    carrouseles.forEach(element => {
+        $(element).owlCarousel({
+            loop:false,
+            margin:10,
+            nav:false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:3
+                }
+            }
+        })
+    });
+    
 }

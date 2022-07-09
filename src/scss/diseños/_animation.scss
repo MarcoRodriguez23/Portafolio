@@ -1,0 +1,20 @@
+@keyframes animarImg {
+    0%{
+        opacity: 0;
+        // transform: rotate(120deg);
+        transform: translateX(20rem);
+    }
+    
+    50%{
+        opacity: 0;
+        // transform: rotate(60deg);
+        transform: translateX(10rem);
+    }
+    
+    100%{
+        opacity: 1;
+        // transform: rotate(0deg);
+        transform: translateX(0);
+
+    }
+}

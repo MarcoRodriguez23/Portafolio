@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="build/css/animate.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="build/css/app.css">
     <link rel="shortcut icon" href="build/img/logo.jpeg">
     <title>Marco Rodríguez</title>
@@ -47,9 +53,12 @@
         </div>
         
     </main>
+    
+    
     <div class="cuadricula contenedor">
         <div class="subcuadricula">
             <h4>Educación y XP</h4>
+            
             <ul>
                 <li>
                     8° Semestre en Ingeniería en Informática UPIICSA-IPN
@@ -96,10 +105,13 @@
                     GITHUB
                 </li>
                 <li>
-                    BOOTSTRAP 5 (aprendiendo)
+                    BOOTSTRAP 5
                 </li>
                 <li>
                     Laravel 9 (aprendiendo)
+                </li>
+                <li>
+                    Despliegue de sitios web en Heroku, DigitalOcean y CPanel
                 </li>
             </ul>
         </div>
@@ -127,37 +139,126 @@
             </ul>
         </div>
     </div>
-    <div id="projects" class="contenedor">
-        <h3 class="titulo">Proy<span>ectos</span></h3>
-        <div class="gallery">
-            <div class="animated-border">
-                <a target="_blank" href="https://infallible-khorana-721885.netlify.app" class="gallery-item">
-                    <img src="build/img/proyecto1.png" alt="">
-                </a>
+    <section id="projects" class="contenedor">
+        <h3 class="titulo">Proyectos<span> PHP MVC</span></h3>
+        <div class="owl-carousel owl-theme container-xl">
+            <div class="card">
+                <img class="card-img-top" src="build/img/1.png" alt="imagen proyecto">
+                <div class="card-body">
+                    <h3 class="card-title">Sistema inmobiliario</h3>
+                    <p class="card-text fs-4 text-center">Sistema desarrollado durante mi servicio social en Tecnologías Longbit. Se contempla el sitio web comercial para que los usuarios puedan ver las propiedades. Por otro lado se cuenta con la web del administrador que utiliza las operaciones CRUD para propiedades, agentes inmobiliarios y vendedores.</p>
+                    <p class="card-text fs-4 text-center">
+                        Tecnologías	utlizadas: PHP, JS, GULP, CSS-SASS, MYSQL, MVC, PHPMAILER, BOOTSTRAP.
+                    </p>
+                    <a target="_blank" href="https://whispering-ocean-12791.herokuapp.com/" class="btn btn-primary p-3 fs-2 d-block w-75 mx-auto">Visitar proyecto</a>
+                </div>
             </div>
-            <div class="animated-border">
-                <a target="_blank" href="https://wonderful-bose-d724b7.netlify.app/" class="gallery-item">
-                    <img src="build/img/proyecto2.png" alt="">
-                </a>
+            <div class="card">
+                <img class="card-img-top" src="build/img/2.png" alt="imagen proyecto">
+                <div class="card-body">
+                    <h3 class="card-title">Proyecto venta de casas</h3>
+                    <p class="card-text fs-4 text-center">Primer proyecto realizado en MVC. Contempla un sitio web para que los usuarios logren visualizar las propiedades en venta. Por el lado del administrador se pueden realizar las operaciones CRUD para las propiedades.</p>
+                    <p class="card-text fs-4 text-center">
+                        Tecnologías	utlizadas: PHP, JS, GULP, CSS-SASS, MYSQL, MVC.
+                    </p>
+                    <a target="_blank" href="https://murmuring-caverns-43208.herokuapp.com/" class="btn btn-primary p-3 fs-2 d-block w-75 mx-auto">Visitar proyecto</a>
+                </div>
             </div>
-            <div class="animated-border">
-                <a target="_blank" href="https://peaceful-allen-35f663.netlify.app" class="gallery-item">
-                    <img src="build/img/proyecto3.png" alt="">
-                </a>
+            <div class="card">
+                <img class="card-img-top" src="build/img/3.png" alt="imagen proyecto">
+                <div class="card-body">
+                    <h3 class="card-title">Proyecto AppSalón</h3>
+                    <p class="card-text fs-4 text-center">Proyecto que se encarga de administrar las citas de una peluquería. Los clientes se pueden registrar en el sitio y solicitar una cita indicando los servicios que necesita. El administrador realiza las operaciones de CRUD a sus servicios y puede filtrar las citas por fecha.</p>
+                    <p class="card-text fs-4 text-center">
+                        Tecnologías	utlizadas: PHP, JS, GULP, CSS-SASS, MYSQL, MVC, PHPMAILER.
+                    </p>
+                    <a target="_blank" href="https://serene-river-49406.herokuapp.com/" class="btn btn-primary p-3 fs-2 d-block w-75 mx-auto">Visitar proyecto</a>
+                </div>
             </div>
-            <div class="animated-border">
-                <a target="_blank" href="https://my-app-qaenn.ondigitalocean.app/" class="gallery-item">
-                    <img src="build/img/proyecto4.png" alt="">
-                </a>
+            
+        </div>
+    </section>
+    <section id="projects" class="contenedor">
+        <h3 class="titulo">Proyectos<span> Frontend</span></h3>
+        <div class="owl-carousel owl-theme container-xl">
+            <div class="card">
+                <img class="card-img-top" src="build/img/4.png" alt="imagen proyecto">
+                <div class="card-body">
+                    <h3 class="card-title">Blog de café</h3>
+                    <p class="card-text fs-4 text-center">Landing page sobre un blog de café.</p>
+                    <p class="card-text fs-4 text-center">
+                        Tecnologías	utlizadas: HTML, CSS-SASS, JS, GULP.
+                    </p>
+                    <a target="_blank" href="https://infallible-khorana-721885.netlify.app" class="btn btn-primary p-3 fs-2 d-block w-75 mx-auto">Visitar proyecto</a>
+                </div>
             </div>
-            <div class="animated-border">
-                <a target="_blank" href="https://plankton-app-v4gn9.ondigitalocean.app/" class="gallery-item">
-                    <img src="build/img/proyecto5.png" alt="">
-                </a>
+            <div class="card">
+                <img class="card-img-top" src="build/img/5.png" alt="imagen proyecto">
+                <div class="card-body">
+                    <h3 class="card-title">EDM Festival</h3>
+                    <p class="card-text fs-4 text-center">Landing page sobre festival de música.</p>
+                    <p class="card-text fs-4 text-center">
+                        Tecnologías	utlizadas: HTML, CSS-SASS, JS, GULP.
+                    </p>
+                    <a target="_blank" href="https://wonderful-bose-d724b7.netlify.app/" class="btn btn-primary p-3 fs-2 d-block w-75 mx-auto">Visitar proyecto</a>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="contact" class="contact">
+    </section>
+
+    <section id="projects" class="contenedor">
+        <h3 class="titulo">Proyectos<span> Bootstrap</span></h3>
+        <div class="owl-carousel owl-theme container-xl">
+            <div class="card">
+                <img class="card-img-top" src="build/img/6.png" alt="imagen proyecto">
+                <div class="card-body">
+                    <h3 class="card-title">PodCast-App</h3>
+                    <p class="card-text fs-4 text-center">Landing page para sitio de podcast.</p>
+                    <a target="_blank" href="https://marcorodriguez23.github.io/podcast-App/" class="btn btn-primary p-3 fs-2 d-block w-75 mx-auto">Visitar proyecto</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="build/img/7.png" alt="imagen proyecto">
+                <div class="card-body">
+                    <h3 class="card-title">Tienda Guitarras</h3>
+                    <p class="card-text fs-4 text-center">Sitio web que contempla todas las secciones (desde index y hasta información del producto) aplicando lo mayor posible las clases de Bootstrap 5.</p>
+                    <a target="_blank" href="https://marcorodriguez23.github.io/Tienda-de-guitarras-bootstrap/" class="btn btn-primary p-3 fs-2 d-block w-75 mx-auto">Visitar proyecto</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="build/img/8.png" alt="imagen proyecto">
+                <div class="card-body">
+                    <h3 class="card-title">Clone U-demy</h3>
+                    <p class="card-text fs-4 text-center">Landing page para sitio de cursos online tratando de imitar el diseño de Udemy.</p>
+                    <a target="_blank" href="https://marcorodriguez23.github.io/Clone-U-demy/" class="btn btn-primary p-3 fs-2 d-block w-75 mx-auto">Visitar proyecto</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="build/img/9.png" alt="imagen proyecto">
+                <div class="card-body">
+                    <h3 class="card-title">Meeti</h3>
+                    <p class="card-text fs-4 text-center">LLanding page para sitio de meetings.</p>
+                    <a target="_blank" href="https://marcorodriguez23.github.io/meeti/" class="btn btn-primary p-3 fs-2 d-block w-75 mx-auto">Visitar proyecto</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="build/img/10.png" alt="imagen proyecto">
+                <div class="card-body">
+                    <h3 class="card-title">Tienda muebles</h3>
+                    <p class="card-text fs-4 text-center">Landing page para sitio de venta de muebles.</p>
+                    <a target="_blank" href="https://marcorodriguez23.github.io/Venta-de-muebles-Bootstrap-5/" class="btn btn-primary p-3 fs-2 d-block w-75 mx-auto">Visitar proyecto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="containter-xl">
+        <p class="text-center fst-italic">Mencion de honor y agradecimiento al gran 
+            <a href="https://www.udemy.com/user/juanpablodelatorrevaldez/">Juan de la Torre</a>
+            Instructor de Udemy con quien he realizado estos proyectos y adquirido buenos conocimientos.</p>
+    </section>
+
+    <footer id="contact" class="contact">
         <h4 class="titulo">Cont<span>acto</span></h4>
         <ul>
             <li>
@@ -169,12 +270,18 @@
             <li>
                 <a target="_blank" href="https://api.whatsapp.com/send?phone=5567814561"><img src="build/img/whatsapp.svg" alt="whatsapp"></a>
             </li>
-            <!-- <li>
-                <a href=""><img src="build/img/45315.png" alt=""></a>
-            </li> -->
         </ul>
-    </div>
+    </footer>
+    
 
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
 <script src="build/js/bundle.js"></script>
 </html>

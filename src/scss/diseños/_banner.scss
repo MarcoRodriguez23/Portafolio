@@ -29,7 +29,8 @@
     
     
     @include tablet{
-        height: 90vh;
+        height: 80vh;
+        max-height: 75rem;
         display: grid;
         grid-template-columns: 65% 35%;
 
@@ -38,6 +39,10 @@
             clip-path: circle(50% at 50% 50%);
             margin: auto;
             height: auto;
+            animation-duration: 1s;
+            animation-delay: 0;
+            animation-timing-function: ease;
+            animation-name: animarImg;
             img{
                 margin: auto;
             }
