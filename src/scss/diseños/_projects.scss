@@ -1,48 +1,24 @@
-.titulo{
-    font-size: 8rem;
-    text-align: center;
-    line-height: 8rem;
-    margin: 4rem 0;
+.card-img-top{
+    height: 22rem;
 }
 
-.gallery{
-    gap: 2rem;
-    .animated-border{
-        
-        width: 85%;
-        margin: auto;
-        margin-bottom: 2rem;
-        a{
-            border-radius: 2rem;
-            display: block;
-            height: 15rem;
-            margin: auto;
-            // padding: 0.1rem;
-            img{
-                border: 2px solid $gris;
-                object-fit: cover;
-                border-radius: 2rem;
-            }
-        }
+.projects{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
 
+.imagenes-c{
+    img{
+        background-color: $azulDos;
+        padding: 1.2rem;
+        height: 12rem;
+        width: 12rem;
+        margin: 2rem auto;
+        object-fit: cover;
+        border-radius: 2rem;
         transition: all 250ms ease;
         &:hover{
             transform: scale(1.1);
         }
-    }
-
-    @include tablet{
-        
-        display: grid;
-        grid-template-columns: repeat(5,1fr);
-        .animated-border{
-            width: 90%;
-            // a{
-            //     img{
-                    
-            //     }
-            // }
-        }
-
     }
 }

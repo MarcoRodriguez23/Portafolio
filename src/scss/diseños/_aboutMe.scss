@@ -10,20 +10,6 @@
         flex-direction: column;
         justify-content: center;
         padding: 2rem;
-        h3{
-            font-size: 8rem;
-            text-align: center;
-            line-height: 8rem;
-            &::after{
-                content: '';
-                background-color: $azulDos;
-                width: 60%;
-                height: 3px;
-                display: block;
-                margin: 2rem auto;
-
-            }
-        }
     }
     .about-me-picture{
         // border: 1px solid yellow;
@@ -43,7 +29,7 @@
 
         .about-me-info{
             padding: 2rem;
-            h3{
+            .tituloLinea{
                 font-size: 10rem;
                 text-align: right;
                 &::after{
@@ -68,4 +54,40 @@
 
 span{
     color: $azulDos;
+}
+
+.tituloLinea{
+    font-size: 8rem;
+    text-align: center;
+    line-height: 8rem;
+    &::after{
+        content: '';
+        background-color: $azulDos;
+        width: 60%;
+        height: 3px;
+        display: block;
+        margin: 2rem auto;
+
+    }
+}
+
+.stituloLinea{
+    @extend .tituloLinea;
+    font-size: 4rem;
+    line-height: 4rem;
+}
+
+.listaXP{
+    ul{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 6rem;
+        li{
+            font-size: 1.2rem;
+            @include tablet{
+                font-size: 1.8rem;
+            }
+        }
+    }
 }
